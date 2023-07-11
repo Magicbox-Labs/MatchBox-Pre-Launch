@@ -1,0 +1,76 @@
+#main{
+    overflow: hidden;
+    position: relative;
+}
+
+.sticker{
+    position: absolute;
+    z-index: 10;
+    width: auto !important;
+}
+
+.sticker-phone{
+    left: 20px;
+    top: 150px;
+    height: 150px;
+}
+
+.sticker-popup{
+    right: 20px;
+    top: 180px;
+    height: 100px;
+    transform: rotate(25deg);
+}
+
+.sticker-heart{
+    right: 40%;
+    top: 280px;
+    height: 40px;
+    transform: rotate(-5deg);
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    /* CSS rules for tablets go here */
+    .sticker-phone{
+        left: 5px;
+        top: 200px;
+        height: 120px;
+    }
+
+    .sticker-popup{
+        right: 20px;
+        top: 180px;
+        height: 80px;
+        transform: rotate(25deg);
+    }
+
+    .sticker-heart{
+        right: 40%;
+        top: 500px;
+        height: 40px;
+        transform: rotate(-5deg);
+    }
+}
+
+@media screen and (max-width: 767px) {
+    /* CSS rules for mobile devices go here */
+    .sticker-phone{
+        left: 25px;
+        top: 100px;
+        height: 100px;
+    }
+
+    .sticker-popup{
+        right: 0px;
+        top: 130px;
+        height: 70px;
+        transform: rotate(10deg);
+    }
+
+    .sticker-heart{
+        right: 40%;
+        top: 65%;
+        height: 30px;
+        transform: rotate(-5deg);
+    }
+}
